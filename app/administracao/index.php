@@ -6,11 +6,11 @@
 <html>
 <head>
 	<title>Ares Controle</title>
-	<script src="js/jquery.js" type="text/javascript"></script>
-	<script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilo.css">
-	<link rel="shortcut icon" href="img/logo_jr.png" type="image/x-icon">
+	<script src="../assets/js/jquery.js" type="text/javascript"></script>
+	<script src="../assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/estilo.css">
+	<link rel="shortcut icon" href="../assets/img/logo_jr.png" type="image/x-icon">
 	<style type="text/css">
 		
 

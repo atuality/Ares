@@ -1,11 +1,12 @@
-﻿<?php include_once 'php/conexao.php';
-$number = 1;
-$number = str_pad($number, 3, '0', STR_PAD_LEFT);
-$ano = date('y');
-$mes = date('m');
-$dia = date('d');
+﻿<?php 
+  include_once '../../php/utils/conexao.php';
+  $number = 1;
+  $number = str_pad($number, 3, '0', STR_PAD_LEFT);
+  $ano = date('y');
+  $mes = date('m');
+  $dia = date('d');
 
-$numSolicitacao = $ano.$mes.$dia."/".$number++;  
+  $numSolicitacao = $ano.$mes.$dia."/".$number++;  
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +15,11 @@ $numSolicitacao = $ano.$mes.$dia."/".$number++;
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/logo_jr.png" type="image/x-icon">  
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="../../assets/img/logo_jr.png" type="image/x-icon">  
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <script src="../../assets/js/jquery.js" type="text/javascript"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
     <title>Unidade Gestora</title>
     <style type="text/css">
 
@@ -63,7 +64,7 @@ $numSolicitacao = $ano.$mes.$dia."/".$number++;
             <div class="col-md-12">
                     <nav class="navbar navbar-default navbar-fixed-top" id="nav-superior">
                         <div class="navbar-header">
-                        <a class="navbar-brand" href="#"><img src="img/logomarca.png" 
+                        <a class="navbar-brand" href="#"><img src="../../assets/img/logomarca.png" 
                          width="200px" style="margin-top: -20px;" alt="logotipo do site"></a>
                         
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"

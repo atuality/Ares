@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/logo_jr.png" type="image/x-icon">  
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="../assets/img/logo_jr.png" type="image/x-icon">  
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <script src="../assets/js/jquery.js" type="text/javascript"></script>
+    <script src="../assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
     <title>Login - Controladoria</title>
     <style type="text/css">
 
