@@ -1,5 +1,4 @@
 <?php 	
-include_once 'php/conexao.php';
   $prefeitura = $_POST["prefeitura"];
   $ano = $_POST["ano"];
 ?>
@@ -48,7 +47,7 @@ include_once 'php/conexao.php';
 
 	<div class='container-fluid container col-md-12' style='padding: 0px;'>
 		<div class='col-md-12' style='background: silver; height: 50px;'>
-			<h1 align='center' class='title'>Prefeitura Municipal de <?echo $prefeitura - $ano ?></h1>
+			<h1 align='center' class='title'>Prefeitura Municipal de <?php echo "$prefeitura - $ano"; ?></h1>
 		</div>
 	</div>
 
