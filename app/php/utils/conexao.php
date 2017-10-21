@@ -1,8 +1,8 @@
 <?php
-define("USER", "u848232879_root");
-define("PASS", "123456");
-define("HOST", "mysql.hostinger.com.br");
-define("DBNAME", "u848232879_staua");
+define("USER", "root");
+define("PASS", "");
+define("HOST", "localhost");
+define("DBNAME", "ares2.0");
 
 //CONEXAO COM O BANCO DE DADOS
 function conectar() {
