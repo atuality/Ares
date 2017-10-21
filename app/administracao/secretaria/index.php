@@ -211,9 +211,12 @@ $numSolicitacao = $ano.$mes.$dia."/".$number++;
                       <td>
                         <a href="#" data-toggle="collapse" <?php echo" data-target='#$c'" ?> class='btn btn-info btn-xs'>
                             Ver detalhado
+                        </a>
+                        <a href="#" data-toggle="collapse" class='btn btn-warning btn-xs'>
+                            Imprimir
                         </a><br><br>
 
-                        <div <?php echo" id='$c' " ?> align="center" class="col-md-12 collapse" style="width: 1000px; position: relative; height: 50px; float:left; margin-left: -900px;border:1px solid silver;">
+                        <div <?php echo" id='$c' " ?> align="center" class="col-md-12 collapse" style="width: 1000px; position: relative; height: 50px; float:left; margin-left: -700px;border:1px solid silver;">
                               <div class="form-group col-md-3">
                                   <label for="n_empenho">Nº Solicitação:</label><br>
                                   <?php echo $aux["solicitacao"]?>

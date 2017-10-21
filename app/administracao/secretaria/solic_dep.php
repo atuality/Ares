@@ -172,7 +172,8 @@
              <div class="form-group col-md-4">
                  <label for="tipo">Tipo:</label>
                  <select class="form-control" name="tipo" id="tipo">
-                    <option>--------</option>
+                    <option>Compra</option>
+                    <option>Serviço</option>
                  </select>
              </div>
          </div>
