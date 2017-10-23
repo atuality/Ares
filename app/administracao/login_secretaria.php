@@ -13,7 +13,7 @@
     <style type="text/css">
 
         body{
-            background-image: url(img/k.png);
+            background-image: url(../assets/img/k.png);
             background-size: 100%;
             background-attachment: fixed; 
         }
@@ -45,7 +45,7 @@
         
         <div class="login col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1 container-fluid row content-row" 
         style="background: ; margin-top: 100px; height: 450px;">
-                <p align="center" style="margin-top: 40px;"><img src="img/ll.png"  
+                <p align="center" style="margin-top: 40px;"><img src="../assets/img/ll.png"  
                 width="280px" style=""></p>
                 <form style="margin-top: 30px;">
                     <input type="text" name="usuario" placeholder="Usuário" class="input form-control" 

@@ -1,12 +1,19 @@
 ﻿<?php 
   include_once '../../php/utils/conexao.php';
+  include_once '../../php/class/elemento.php';
+  include_once '../../php/models/InterfaceModel.php';
+  include_once '../../php/models/ModelElemento.php';
+  include_once '../../php/controls/ControlElemento.php';
+
   $number = 1;
   $number = str_pad($number, 3, '0', STR_PAD_LEFT);
   $ano = date('y');
   $mes = date('m');
   $dia = date('d');
 
-  $numSolicitacao = $ano.$mes.$dia."/".$number++;  
+  $numSolicitacao = $ano.$mes.$dia."/".$number++;
+
+  
 ?>
 
 <!DOCTYPE html>
@@ -134,38 +141,37 @@
                      <label for="data">Data:</label>
                      <input type="date" class="form-control" name="data" id="data">
                  </div>
-                 <?php 
-						$sql = mysqli_query($con, "SELECT * FROM elemento") or die( mysqli_error($con)); 
-                 ?>
                  <div class="form-group col-md-3">
                      <label for="secretaria">Elemento Despesa:</label>
-                     			
+                     			<?php 
+                        echo "<h1>ENTROU EM LISTAR - view</h1>";
                      
-                     <select class="form-control" name="secretaria" id="secretaria">
-                     		<?php while($aux = mysqli_fetch_assoc($sql)) {?>
-                        <option><?php 
-                        
-										echo $aux["nome"];
+                    echo "<select class='form-control' name='secretaria' id='secretaria'>";
+
+                          $controlElemento = new ControlElemento();  
+                          $elementos = $controlElemento->listar();
+                          
+                          $e = new ArrayIterator($elementos);
+                          while($e->valid()){
+                      
+                            echo "<option>".$e->current()->nomeElemento."</option>";
+                            
+                            $e->next();
+                          }
                         	
-                        ?>
-                        	</option><?php }?>
-                     </select>
+                     echo "</select>";?>
                  </div>
                  
                  <div class="form-group col-md-3">
                   <?php 
-					$sql = mysqli_query($con, "SELECT * FROM subelemento") or die( mysqli_error($con)); 
+					
                  ?>	
                  
                      <label for="subelemento">Subelemento:</label>
                      <select class="form-control" name="subelemento" id="subelemento">
-                        <?php while($aux = mysqli_fetch_assoc($sql)) {?>
-                        <option><?php 
-                        
-										      echo $aux["nome"];
-                        	
+                        <?php 
+
                         ?>
-                        	</option><?php }?>
                      </select>
                  </div>
                  <div class="form-group col-md-3">

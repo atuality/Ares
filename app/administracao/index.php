@@ -15,7 +15,7 @@
 		
 
 		body{
-	    	background-image: url(img/k.png);
+	    	background-image: url(../assets/img/k.png);
 	    	background-size: 100%;
 	    	background-attachment: fixed; 
 	    }
@@ -56,7 +56,7 @@
 			<div class="option col-md-4">
 				<div style="background: silver; width: 100%; height: 30px; border-radius: 10px 10px 0px 0px;">
 					<h3 align="center" class="h">Compras</h3>
-					<p align="center"><img src="img/car.png" width="100px" style="margin-top: 25px; "></p>
+					<p align="center"><img src="../assets/img/car.png" width="100px" style="margin-top: 25px; "></p>
 				</div>
 			</div>
 		</a>
@@ -64,7 +64,7 @@
 			<div class="option col-md-4 col-md-offset-4">
 				<div style="background: silver; width: 100%; height: 30px; border-radius: 10px 10px 0px 0px;">
 					<h3 align="center" class="h">Unidade Gestora</h3>
-					<p align="center"><img src="img/sec.png" width="100px" style="margin-top: 25px; "></p>
+					<p align="center"><img src="../assets/img/sec.png" width="100px" style="margin-top: 25px; "></p>
 				</div>
 			</div>
 		</a>
@@ -74,7 +74,7 @@
 			<div class="option col-md-4 col-md-offset-4">
 				<div style="background: silver; width: 100%; height: 30px; border-radius: 10px 10px 0px 0px;">
 					<h3 align="center" class="h">Controladoria</h3>
-					<p align="center"><img src="img/controladoria.png" width="100px" style="margin-top: 25px; "></p>
+					<p align="center"><img src="../assets/img/controladoria.png" width="100px" style="margin-top: 25px; "></p>
 				</div>
 			</div>
 		</a>
